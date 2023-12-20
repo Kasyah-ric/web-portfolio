@@ -1,0 +1,154 @@
+
+header {
+    display: flex;
+    gap: 10px;
+    padding: 2% 2%;
+    background-color: #87f4fa;
+    justify-content: space-between;
+    align-items:baseline;
+    border-bottom: thin solid #38a7b8;
+    width: 100%;
+}
+
+/*check padding to adjust the button spacing?*/
+
+h1 {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color: #187381;
+    padding: 2% 1%;
+    font-size: 80px;
+}
+
+.hover div > button {
+text-decoration: wavy;
+}
+
+nav > img {
+    justify-content: left;
+}
+
+
+button {
+    padding: 2%;
+    background: none;
+    border-radius: 5px;
+    border:outset;
+
+}
+
+/* the BODY*/
+body {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.container {
+    display:flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    margin: 30px;
+    justify-content: space-between;
+    width: 100%;
+}
+
+
+/* sections' structure specifics*/
+.lesson {
+    height: fit-content;
+    display: flex;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    
+}
+/*maybe delete^^*/
+
+.About-section {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color:black;
+}
+
+section > h2, section > h3, section > h4 {
+    color: #38a7b8;
+    font-weight: bold;
+    font-size: 50px;
+    padding: 4px;
+    
+}
+
+section > p {
+    font-size: 40px;
+    padding: 4px;
+
+}
+
+section {
+    margin: 40px auto;
+
+}
+/*Media Quiries defined below: */
+
+/* tablets*/
+@media screen and (max-width: 1000px) {
+    section {
+        width: 100%;
+        float: left;
+    }
+    h1 {
+        font-size: 100px;
+        color: aliceblue;
+    }
+    div {
+        color: aliceblue;
+    }
+    header {
+        background-color:#187381;
+        color: aliceblue;
+    }
+   
+    section > h2, section > h3, section > h4 {
+        font-size: 40px;
+        color: #187381;
+    } 
+    section > p {
+        font-size: 30px;
+    }
+}
+
+
+/* smartphones */
+
+
+
+/* small smartphones*/
+@media screen and (max-width: 576px) {
+        section {
+            width: 100%;
+            float: left;
+            
+        }
+        main .comtainer {
+            margin: 0;
+        }
+        h1 {
+            font-size: 50px;
+            color: aliceblue;
+        }
+        header > button {
+            font-size: 14px;
+            color: aliceblue;
+        }
+        
+        header {
+            background-color:#187381;
+            width: 100%;
+            color: aliceblue;
+        }
+        section > h2, section > h3, section > h4 {
+            font-size: 30px;
+            color: #187381;
+        } 
+        section > p {
+            font-size: 25px;
+        }
+    
+    }
